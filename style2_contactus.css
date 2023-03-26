@@ -2,7 +2,7 @@
 
 {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
@@ -11,19 +11,19 @@ body{
 
 }
 .container{
-    width: 450px;
+    width: 400px;
     height: auto;
     background-color: #fff;
     border-radius: 10px;
     position: absolute;
-    top: 125%;
-    left: 20%;
+    top: 62%;
+    left:79%;
     transform: translate(-50%,-50%);
     display: flex;
     justify-content: center;
 }
 .box{
-    width: 400px;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;

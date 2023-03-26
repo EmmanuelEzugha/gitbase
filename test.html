@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="searchapi.js"></script>
+</head>
+<body>
+<script>
+const api = new CraneSearchAPI('https://apk-stage.crane.aero/ibe/search');
+console.log(api.portCodes());
+console.log(api.portNames());
+console.log(api.portGroupsFor('DYU'));
+console.log(api.languages());
+console.log(api.currencies());
+console.log(api.cabinClasses());
+console.log(api.portGroups());
+console.log(api.maxSegmentCount());
+console.log(api.maxPassengerCount());
+console.log(api.getAdditionalPassengerTypes(“IST”, ”AYT”));
+console.log(api.getAvailableNations(“IST”, “AYT”));
+let request = new AvailabilityRequest();
+request.lang = lang;
+request.currency = ccy;
+request.cabinClass = cabinClass;
+request.tripType = tripType;
+request.depPort = depPort;
+request.arrPort = arrPort;
+request.departureDate = departureDate;
+request.returnDate = retDate;
+request.affiliateCode = affiliateCode;
+request.clickId = clickId;
+request.withCalendar = withCalendar;
+request.isMobileCalendar = isMobileCalendar;
+let passengerQuantities = [];
+passengerQuantities.push(new
+PassengerQuantity("ADULT","STDT","1"));
+request.passengerQuantities = passengerQuantities;
+request.nationality = nationality;
+api.searchV2(request);
+</script>
+</body>
+</html>
