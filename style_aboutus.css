@@ -1,15 +1,10 @@
-
 *
-
 {
     padding: 0;
     margin: 0;
     box-sizing: boder-box;
 }
-body {
-  background: linear-gradient(to right, #f39405, #06e4ec, #f39405);
-  font-family: 'Poppins', sans-serif;
-}
+
 
     .menu-bar
 {
@@ -81,15 +76,20 @@ div.gallery {
 */
   
 h1{ 
-  animation: type 3s steps(30);
+  animation: type 6s steps(33);
   overflow: hidden;
   white-space: nowrap;
   font-family: Georgia;
-  text-decoration-color: rgb(1, 1, 14);
+  text-decoration-color: blue;
+  border-right: 4px solid white;
   width: 33ch;
-  color: rgb(2, 2, 11);
+  color: blue;
 
 }
+
+p {outline-color:blue;}
+p.dashed {outline-style: dashed;outline-width: 80;}
+
 @keyframes type{
 
   0%{
@@ -98,4 +98,5 @@ h1{
   100% {
     width: 40ch;
   }
+  
 }
