@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script defer src="index_week3.js"></script>
+    
+
+    
     <title>Jessie Technology Limited</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="style2_contactus.css">
-    <script src="main_contactus.js"></script>
+    <link rel="stylesheet" href="style_week3.css">
+    <script src="./index.js"></script> 
 
     
 </head>
@@ -34,7 +47,7 @@
 </div>
 -->
   
-<h1>Welcome to Side Hustle Week 3 Task</h1>
+<h1>Welcome to Jessie Technology</h1>
 
 <div class="gallery">
     <a target="_blank" href="intercom3.jpg">
@@ -52,38 +65,46 @@
 
   
 
-  <div class="gallery">
-    <div class="box"><br><br>
-       <b> <h4>Side Hustle Week 3 Task</h4></b>
-        <div class="name">
-            <i class="fas fa-user"></i>
-            <input type="text" placeholder="Name" id="name">
-        </div>
-        <div class="phone">
-            <i class="fas fa-user"></i>
-            <input type="number" placeholder="Phone Number" id="phone">
+  <div class="container">
+    <form id="form" action="/">
+        <h2>Side Hustle Week 3 Task</h2>
+        <div class="input-control">
+            <label for="username">Full Name</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
         </div>
 
-        <div class="gender">
-            <i class="fas fa-user"></i>
-            <input type="gender" placeholder="Gender" id="gender">
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
         </div>
 
-        <div class="email">
-            <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="Email" id="email"name="email" required>
-        </div>
-        <div class="message-box">
-            <textarea id="msg" cols="30" rows="10" placeholder="Please give feed back, we value your feedback"></textarea>
-        </div>
-        <div class="button">
-            <button id="send" onclick="message()">Submit Form</button>
-        </div>
-        <div class="message">
-            <div class="success" id="success">Your Message Successfully Sent!</div>
-            <div class="danger" id="danger"><h4>Feilds Can't be Empty!</h4></div>
+        <div class="input-control">
+            <label for="phonenumber">Phone Number</label>
+            <input id="phonenumber" name="phonenumber" type="number">
+            <div class="error"></div>
         </div>
 
+        <div class="input-control">
+            <label for="gender">Gender</label>
+            <input id="gender" name="gender" type="text">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input id="password"name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password2">Password again</label>
+            <input id="password2"name="password2" type="password">
+            <div class="error"></div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 
   </div>
 
